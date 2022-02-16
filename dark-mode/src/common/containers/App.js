@@ -1,5 +1,6 @@
 import React from 'react';
+import { DarkModeProvider } from '../contexts/dark-mode';
 
 export default function App({ children }) {
-  return children;
+  return <DarkModeProvider>{children}</DarkModeProvider>;
 }
